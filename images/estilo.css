@@ -1,0 +1,524 @@
+*{
+    box-sizing: border-box;
+}
+/* ESTILO GENERAL DEL TEMPLATES
+--------------------------------------*/
+.fondo {
+    background-color:black;
+    background:url(J&L.png);
+    
+}
+.bordes-top{
+     border: 0.5px solid rgb(200,200,200);
+     border-radius: 10px 10px 0 0;
+}
+.bordes-bot{
+    border: 0.5px solid rgb(200,200,200);
+    border-radius: 0 0 10px 10px;
+}
+.tam{
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0px;
+}
+.contenido{
+    background-color:white;
+    min-height:250px;
+}
+/*--------------------------------------------*/
+.titulo {
+    font-family:"lucida calligraphy",fantasy;
+    font-style:italic;
+    color: lightgrey;
+    text-shadow:0px 0px 0px 20px rgba(46,46,46,1);
+    text-align:center;
+    font-weight: bold;
+    font-size: 2em;
+    background: white;
+    padding: 1px 0;
+}
+/* ESTILO DE LA BARRA DE NAVEGACION
+--------------------------*/
+.navegacion{
+        background: rgb(30,30,30);
+        color: white;
+        text-align: center;
+        padding: 2px 0;
+        border: .5px solid rgb(200,200,200);
+        margin-top:0;
+  }
+.navegacion a{
+        text-decoration: none;
+        color: white;
+}
+.navegacion a:hover{
+    font-weight: bold;
+}
+.navegacion li{
+        display: inline-block;
+        margin: 0 20px;
+        padding: 1px 5px;
+        font-size: 1.5em
+}
+/*-------------------------------*/
+
+/* ESTILO DE LA PAGINA GENERAR.PHP
+--------------------------*/
+.generarCom{
+    background: white;
+    padding: 10px 0;
+    margin-top:0;
+}
+.generarCom p{
+    display: inline-block;
+    width: auto;
+    padding: .5em 1em;
+    background: rgba(30,30,30,.5);
+    color:lightgray;
+    border: .5px solid #788999;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.generarCom table{
+	width: 40%;			
+	border-collapse: separate;
+	border-spacing: 0px;
+	display:inline-table;
+	margin:10px 50px;
+}
+.generarCom table tr:first-child th{
+	border-radius: 10px 10px 0 0;
+}
+.generarCom table tr:last-child td:first-child{
+	border-radius: 0 0 0 10px;
+}
+.generarCom table tr:last-child td:last-child{
+	border-radius: 0 0 10px 0px;
+}
+.generarCom td{
+	width: 50%;
+	border: 2px solid rgb(80,80,80);
+	padding: 5px 5px;
+}
+ .generarCom th{
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+            background: #eaeaea;
+            border: 2px solid rgb(80,80,80);
+}
+.generarCom input{
+    border:none;
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.generarCom select{
+     border:none;
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+ }
+       
+.generarCom div{
+     text-align: center;
+}
+.generarCom input[type="submit"]{
+    width: 150px;
+   background: rgba(150,150,150,.5);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+.generarCom input[type="submit"]:hover{
+    width: 150px;
+    background: rgba(170,170,170,.5);
+    font-weight: bold;
+     color: rgba(20,20,20,.8);
+    font-size: 1.2em;
+}
+/*---------------------------------------------*/
+
+/*ESTILOS DE LA PAGINA DE CLIENTES
+-----------------------------------*/
+.clientes article{
+    display: block;
+    font-size: 15px;
+     margin-left: 1em;
+    margin-top: 1em;
+}
+
+.clientes_text{
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    background: rgba(106,106,106,.2);
+    height: 2em;
+}
+
+.clientes p{
+    display: inline-block;
+    width: auto;
+    padding: .5em 1em;
+    background: rgba(30,30,30,.5);
+    color:lightgray;
+    border: .5px solid #788999;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.clientes__lista fieldset{
+    min-width: 50%;
+    background: rgba(221, 221, 222, 0.13);
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .5em 3em;
+    border-radius: 5px;
+}
+
+.clientes__lista table{
+    width: 90%;         
+    border-collapse: collapse;
+    border: 1px solid rgba(200,200,200,0.8);
+    display:inline-table;
+    margin:1em 1em;
+    font-size: 1em;
+}
+
+.clientes__lista td{
+    border: 2px dotted rgba(200,200,200,0.8);
+    padding: 1px .4em;
+}
+
+.clientes__lista th{
+    font-weight: bold;
+    text-align: center;
+    background: #eaeaea;
+    border: 2px dotted rgba(200,200,200,0.8);
+}
+.clientes__lista img{
+    width:1.5em;
+    height: auto;
+}
+.clientes input[type="image"]{
+    width: 3em;
+    vertical-align: middle;
+    margin-left: .5em;
+}
+
+.clientes__nuevo fieldset{
+    width: 60%;
+    margin: 4px auto;
+    background: rgba(221, 221, 222, 0.13);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .5em 3em;
+    border-radius: 5px;
+}
+.clientes__nuevo table{
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(221, 221, 222, 0.13);
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 3px 3em;
+    border-radius: 5px;
+} 
+.clientes__nuevo input{
+    margin: 1px .2em;
+}  
+.clientes__nuevo div{
+    display: inline-table;
+}
+
+.clientes legend{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+/*-----------------------------------*/
+
+
+
+
+/*ESTILOS DE LA PAGINA DE CLIENTES
+-----------------------------------*/
+.prestamos{
+    padding-top: 1em;
+}
+.prestamos th{
+    font-weight: bold;
+    font-size: 1.3em;
+    background: rgba(180,180,180,0.2);
+}
+
+.prestamos__modificar{
+    width: 30%;
+    display: inline-table;
+    margin-left: 1em;
+
+}
+.prestamos__separacion{
+    width: 15%;
+    display: inline-table;
+    margin-left: 1em;
+
+}   
+.prestamos__resumen{
+    width: 40%;
+    display: inline-table;
+    margin-right: 1em;
+    margin-left: 2em;
+
+
+}
+.prestamos__resumen table{
+    width: 100%;
+    background:lightgreen;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.prestamos__resumen td,.prestamos__resumen th{
+    width: 32%;
+    border: 1px dotted;
+}
+
+.prestamos__lista{
+    margin: 1em auto;
+    padding:1em 1em;
+    width: 100%;
+    overflow: auto;
+
+
+}
+.prestamos__lista table{
+    font-size: 20px;
+    min-width: 60%;
+    max-width: 100%;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+.prestamos__encabezados{
+    font-weight: bold;
+    font-size: 1.2em;
+    background: rgba(200,200,200,0.2);
+}
+
+.prestamos__lista td, .prestamos__lista th{
+    padding:1px 0.5em;
+    border: dotted rgba(100,100,100,.5); 
+}
+
+/*---------------------------------------------*/
+
+
+
+/* ESTILO DEL COMPROBANTE
+--------------------------------------------*/
+.pagina1{
+    width: 800px;
+    height: 1000px;
+}
+.comprobante{
+    background: url("J&LCHICO.png");
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    width: 680px;
+    height: 400px;
+    margin: 5% auto;
+    padding:  0;
+    overflow: auto;
+    position: relative;
+
+}
+.comprobante input{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.comprobante__datos{
+    padding:.5em;
+    position: absolute;
+    right: 2%;
+    height: 100%;
+}
+.comprobante__concepto{
+    position: absolute;
+    left: -24%;
+    top: 26%;
+    margin: 13% 10px 10px 9px;
+    width: 56%;
+    height: 20px;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+}
+.comprobante__concepto input{
+    border:none;
+    border-bottom:  dotted;
+    text-align: center;
+    width: 4em;
+}
+.comprobante article{
+
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.comprobante__img
+{
+    position: absolute;
+    left: 9%;
+    bottom: 5%;
+    width: 15%;
+}/*
+.left
+ {
+    display: inline-block;
+    position: absolute;
+    left: 1em;
+ }
+ .right
+ {
+    display: inline-block;
+    position: absolute;
+    right: 3em;
+ }
+  .bot{
+    bottom: 1px; 
+  }
+/*
+ .sello
+ {
+    
+ }
+ .comprobate__position{
+    position: relative;
+ }
+*/
+.subrayado{
+    border-bottom: solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    text-align: center;;
+}
+
+.ralla{
+    border:none;
+    background: url(rallas.png);
+    text-align: center;
+}
+
+
+.sinborde{
+    border:none;
+    text-align: center;
+}
+img {
+    height: 370px;
+    overflow: auto;
+
+}
+
+.size-8
+{
+    width: 100px;
+}
+h3{
+    display: inline-block;
+    font-size: 14px;
+    width: 22%;
+    margin: 0% 2% 0% 9%;
+}
+.comprobante__datos__right{
+    position: absolute;
+    bottom: 4em;
+    right:  2em;
+    padding-bottom: .2em;
+
+}
+.comprobante__datos__left{
+    position: absolute;
+    bottom: 4em;
+    left:  2em;
+    padding-bottom: .2em;
+
+}
+.comprobante__sepracion{
+    border-bottom: 8px dashed;
+    margin:2em 1em;
+    width: 100%;
+}
+.comprobante__pagina2{
+    page-break-before: always;
+    width: 800px;
+    height: 1100px;
+    background: url("J&LCHICO.png");
+}
+.comprobante__pagina2 section{
+    height: 542px;
+    
+}
+.comprobante__pagina2 article{
+    padding-top: 25%; 
+    width: 90%;
+    vertical-align: middle;
+    margin: 0 auto;
+    
+}
+.comprobante__pagina2 p{
+    font-size: 18px;
+    font-family: "Baskerville Old Face", fantasy;
+
+    margin-top:0.5em;
+}
+.comprobante__pagina2 p:last-child {
+    font-size: 12px;
+    font-family: 'calibri';
+
+}
+.buscarComp{
+    width: 40%;
+    font-size: 20px;
+    margin: .2em auto;
+}
+
+
+@media print{
+    header, footer,aside,nav{
+        display: disabled;
+    }
+}
+   /* Default left, right, top, bottom margin is 2cm */
+@page { margin: 0cm; } 
+
+/*@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { }
+@media only screen and (min-width: 324px) and (max-width: 736px) {*/
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) {
+  /* iPhone only */
+  /* Styles */
+ .prestamos__lista td, .prestamos__lista th{
+    font-size: 18px;
+} 
+.clientes__nuevo fieldset{
+    width: 100%;
+}

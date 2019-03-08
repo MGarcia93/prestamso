@@ -1,0 +1,175 @@
+body{
+	background: #eeeeee;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.logo{
+	width: 150px;
+}
+.botonera{
+    padding-top:1em;
+}
+.botonera li{
+	display: inline-block;
+	margin-left: 8px;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top:auto;
+}
+.botonera li a{
+	color: #040404c7;
+
+}
+.botonera li a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+header{
+	background: #f00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: fixed;
+	width: 100%;
+	z-index: 34242;
+}
+
+.principal{
+	background: red;
+	height: 90vh;
+	background: url(../images/J&L.png)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.principal h4{
+	color: rgba(45, 45, 45, 0.67);
+}
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
+}
+
+.cta{
+	text-align: center;
+}
+.principal h1{
+	font-weight: 700;
+	font-size: 50px;
+	color: rgba(57, 57, 57, 0.42);
+    text-shadow: 0px 0px 5px rgba(100,100,100,.7);
+}
+
+.principal p{
+	color: rgba(28,28,28,0.9);
+}
+
+.nosotros{
+    background: #f00;
+	width: 100%;
+	height: 50vh;
+	text-align: center;
+	
+}
+.nosotros h1{
+	font-weight: 100;
+}
+.servicios{
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+.servicios img{
+	width: 40%;
+	text-align: center;
+}
+
+.servicios h1{
+	color: #666;
+	font-weight: 100;
+}
+.servicios .images{
+	padding-top: 30px;
+}
+
+.images .col-md-3{
+	padding-top: 20px;
+
+}
+.social{
+	text-align: center;
+}
+.social img{
+	width: 30%;
+	text-align: center;
+}
+
+footer{
+	background: #f00;
+	height: 50vh;
+	padding-top: 30px;
+}
+footer h1{
+	text-align: center;
+	font-weight: 100;
+}
+
+#home {
+	color: white;
+}
+.col-xs-4{
+	text-align: center;
+}
+
+
+/*@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { }
+@media only screen and (min-width: 324px) and (max-width: 736px) {*/
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) {
+  /* iPhone only */
+  /* Styles */
+  .off {
+    /*display: none !important;*/
+    height:13px;
+    width:auto;
+  }
+  .on {
+    display: block !important;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+  .social img{
+  	width: 100%;
+  }
+  .botonera li a {
+    font-size: 13px;
+}
+.nosotros{
+    vertical-align: middle;
+	height: 400px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+#home{
+	padding-top: 65px;
+}
+
+h1{
+	font-size: 30px;
+}
+
+footer{
+	padding-top: 10px;
+		height: 30vh;
+}
+
+}

@@ -1,0 +1,57 @@
+
+.titulo {
+    font-family:"lucida calligraphy",fantasy;
+    font-style:italic;
+    color:#464646;
+    text-shadow:0px 0px 0px 20px rgba(46,46,46,1);
+    text-align:center;
+    padding: 1px 0px;
+    font-size:150%;
+}
+.fondo {
+    background-color:black;
+    background:url(J&L.png);
+    
+}
+fieldset{
+    width: 300px;
+    padding: 5px 0px;
+    border: none;
+    text-align: center;
+    font-family: arial;
+    margin: 0 auto;
+}
+input{
+    margin: 0.5em 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 1.5em;
+    text-align: center;
+
+}
+form{
+    width: 300px;
+    background: rgba(200,200,200,.8);
+    margin: 0 auto;
+    padding: 20px 10px 0 10px;
+    border-radius: 4px;
+ }
+
+legend{
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: grey;
+    text-shadow: 0 0 0 10px rgba(100,100,100,.5);
+}
+ input[type="submit"]{
+    background-color: rgb(100,100,100);
+    color:  white;
+    border-radius: 6px;
+
+    cursor: pointer;
+ }
