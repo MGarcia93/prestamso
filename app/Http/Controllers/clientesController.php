@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Cliente;
 
 class clientesController extends Controller
 {
@@ -45,7 +46,7 @@ class clientesController extends Controller
      */
     public function show($id)
     {
-        //
+        return Cliente::find($id);
     }
 
     /**

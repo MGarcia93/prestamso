@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Prestamo;
+use App\Cliente;
 
 class prestamoController extends Controller
 {
@@ -24,7 +25,13 @@ class prestamoController extends Controller
      */
     public function create()
     {
-        //
+        $id= Prestamo::max('ID');
+        $clientes=Cliente::all();
+        return view("prestamo.generar")->with([
+            "id"=>$id,
+            "clientes"=>$clientes
+        ]);
+
     }
 
     /**
@@ -35,7 +42,28 @@ class prestamoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nuevo= new Prestamo;
+        $nuevo->FECHA=$request->fechaPrestamo;
+        $nuevo->PRESTADOR=$request->prestador;
+        $nuevo->MONTONUM=$request->cantNumero;
+        $nuevo->MONTOLETRA=$request->cantLetra;
+        $nuevo->DURACION=$request->duracion;
+        $nuevo->CUOTAS=$request->cuotas;
+        $nuevo->ESTADO=1;
+        $nuevo->IDCLIENTE=$request->cliente;
+        if($nuevo->save()){
+            return redirect()->action(
+            "prestamoController@create",["save",1]
+            );
+        }
+        else{
+            return redirect()->action(
+            "prestamoController@create",["save",0]
+            );   
+        }
+
+        
+
     }
 
     /**

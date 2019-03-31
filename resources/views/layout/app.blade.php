@@ -14,7 +14,7 @@
 	</header>
 	<nav class="tam navegacion">
 		<ul>
-			<li><a href="generar.php">Nuevo</a></li>
+			<li><a href="/prestamo/create">Nuevo</a></li>
 			<li><a href="comprobante.php">Imprimir</a></li>
 			<li><a href="clientes.php">Clientes</a></li>
 			<li><a href="prestamos.php">Prestamos</a>
@@ -25,6 +25,8 @@
 <div class="bordes-bot tam contenido" id="app">
 @yield('contenido')
 </div>
-<script src="{{ asset('/js/app.js') }}"></script>
+@yield('script')
+
+
 </body>
 </html>

@@ -14,4 +14,4 @@
 Route::get('/', 'menuController@index');
 Route::get('/generar', 'menuController@generar');
 Route::resource('prestamo', 'prestamoController');
-Route::resource('cliente', 'clienteController');
+Route::resource('cliente', 'clientesController');
