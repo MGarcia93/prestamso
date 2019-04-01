@@ -13,5 +13,13 @@
 
 Route::get('/', 'menuController@index');
 Route::get('/generar', 'menuController@generar');
+Route::get('/comprobante', 'menuController@generar');
 Route::resource('prestamo', 'prestamoController');
 Route::resource('cliente', 'clientesController');
+Route::group(['prefix'=>'usuario','as'=>'usuario.'], function() {
+    Route::get('/create', 'usuarioController@create')->name('create');
+    Route::post('/store/', 'usuarioController@store')->name('store');
+    Route::get('/login', 'usuarioController@login')->name('login');
+    Route::post('/validation', 'usuarioController@validation')->name('validation');
+    });
+
