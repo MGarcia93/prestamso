@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LendingController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('home');
+})->middleware(['auth'])->name('home');
+
+Route::resource('lendings', LendingController::class)->middleware(['auth'])->names('lendings');
 
 require __DIR__ . '/auth.php';
