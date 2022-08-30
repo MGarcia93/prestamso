@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Lending extends Model
 {
     use HasFactory;
-
+    protected $fillable = ['date', 'lender_id', 'amount_number', 'amount_word', 'client_id', 'dues_current', 'dues_quantity'];
 
     public function lender()
     {
