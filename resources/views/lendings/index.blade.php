@@ -21,7 +21,8 @@
             </thead>
             <tbody>
                 @foreach ($lendings as $lending)
-                    <tr>
+                    <tr
+                        class="{{ $loop->odd ? 'bg-gray-50' : 'bg-white' }} border-b dark:bg-gray-800 dark:border-gray-700">
                         <td class="py-4 px-6">{{ $lending->id }}</td>
                         <td class="py-4 px-6">{{ $lending->client->name }}</td>
                         <td class="py-4 px-6">${{ $lending->amount_number }}</td>
