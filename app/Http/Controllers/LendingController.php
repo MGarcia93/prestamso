@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\LendingStatus;
 use App\Models\Client;
 use App\Models\Lending;
 use App\Models\User;
@@ -16,7 +17,8 @@ class LendingController extends Controller
      */
     public function index()
     {
-        //
+        $lendings = Lending::where('status', LendingStatus::Active)->get();
+        return view("lendings.index", compact('lendings'));
     }
 
     /**
