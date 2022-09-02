@@ -5,6 +5,11 @@
         </h2>
     </x-slot>
     <div class="mt-3">
+        @if (session('info'))
+            <div class="w-full py-4 px-6 bg-green-500 font-bold rounded-sm mb-3  text-white">
+                {{ session('info') }}
+            </div>
+        @endif
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr class="">
@@ -22,7 +27,7 @@
             <tbody>
                 @foreach ($lendings as $lending)
                     <tr
-                        class="{{ $loop->odd ? 'bg-gray-50' : 'bg-white' }} border-b dark:bg-gray-800 dark:border-gray-700">
+                        class="{{ $loop->odd ? 'bg-gray-50 dark:bg-gray-900' : 'bg-white dark:bg-gray-800' }} border-b  dark:border-gray-700">
                         <td class="py-4 px-6">{{ $lending->id }}</td>
                         <td class="py-4 px-6">{{ $lending->client->name }}</td>
                         <td class="py-4 px-6">${{ $lending->amount_number }}</td>
