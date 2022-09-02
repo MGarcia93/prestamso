@@ -50,7 +50,7 @@ class LendingController extends Controller
             'client_id' => 'required'
         ]);
         $lending = Lending::create($request->all());
-        return $lending;
+        return redirect()->route('lendings.index')->with("info", "se a creado el prestamo correctamente");
     }
 
     /**
