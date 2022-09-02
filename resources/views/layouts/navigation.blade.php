@@ -18,7 +18,7 @@
                     <x-nav-link :href="route('home')" :active="request()->routeIs('lendings.show')">
                         Imprimir
                     </x-nav-link>
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                    <x-nav-link :href="route('clients.index')" :active="request()->routeIs('clients.*')">
                         Clientes
                     </x-nav-link>
                     <x-nav-link :href="route('lendings.index')" :active="request()->routeIs('lendings.index')">
